@@ -1,13 +1,49 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>Login</ion-title>
+    <ion-title>login</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Login</ion-title>
+      <ion-title size="large"></ion-title>
     </ion-toolbar>
   </ion-header>
+
+  <div id="container">
+    <strong>Bienvenido</strong>
+    <p>
+
+      <ion-card>
+        <ion-card-content>
+          Inicie sesión para continuar.
+          <ion-input
+            type="email"
+            fill="solid"
+            label="Email"
+            labelPlacement="floating"
+            helperText="Enter a valid email"
+            errorText="Invalid email"
+            ngModel
+            email
+          ></ion-input>
+
+          <ion-input
+            type="email"
+            fill="solid"
+            label="Email"
+            labelPlacement="floating"
+            helperText="Enter a valid email"
+            errorText="Invalid email"
+            ngModel
+            email
+          ></ion-input>
+  
+        </ion-card-content>
+      </ion-card>
+
+      Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a>
+    </p>
+  </div>
 </ion-content>
