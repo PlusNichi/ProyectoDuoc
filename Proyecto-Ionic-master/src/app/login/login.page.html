@@ -1,39 +1,33 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title id="titular">
-      RegistrApp
-    </ion-title>
+  <ion-toolbar class="titu">
+    <ion-title>Login</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Titulo Principal</ion-title>
+      <ion-title size="large">login</ion-title>
     </ion-toolbar>
   </ion-header>
 
-  <div id="container">
-    <ion-card>
-      <ion-card-header>
-        <ion-card-title>Inicio de sesión</ion-card-title>
-      </ion-card-header>
-      <ion-card-content>
-        <ion-list>
-          <ion-item>
-            <ion-input label="Nombre Usuario" labelPlacement="floating" fill="solid" placeholder="Ingrese nombre usuario"
-              >
-            </ion-input>
-          </ion-item>
-          <ion-item>
-            <ion-input label="Contraseña" labelPlacement="floating" fill="solid" placeholder="Ingrese contraseña" type="password"
-              >
-            </ion-input>
-          </ion-item><br>
-          <ion-button fill="clear" size="small" [routerLink]="['/dashboard']">Reestablecer constraseña</ion-button><br>
-          <ion-button shape="round" size="small" [routerLink]="['/dashboard']">Ingresar</ion-button>
-        </ion-list>
-      </ion-card-content>
-    </ion-card>
-  </div>
+  <ion-list id="container">
+    <ion-item class="testo">
+      <ion-input  label="Usuario" [(ngModel)]="usuario" labelPlacement="stacked"
+      placeholder="Ingrese usuario" maxlength="8" minlength="3"></ion-input>
+    </ion-item>
+
+    <ion-item class="testo">
+      <ion-input label="Contra" [(ngModel)]="contra" labelPlacement="stacked"
+        placeholder="Ingrese contraseña" type="Contraseña" maxlength="8" minlength="3"></ion-input>
+    </ion-item>
+
+    <ion-item id="ara"><ion-item style="text-align: center; justify-content: center;" [routerLink]="['/restore']">Recuperar Contraseña</ion-item>
+    </ion-item>
+    <!-- se crea una clase para poder modificarlo y se le pone button a los lados para que el estilo se pueda poner mejor -->
+     <ion-button id="buton"  (click)="Ingresar()" class="btn">Ingresar</ion-button>
+
+</ion-list>
+  
+
 </ion-content>

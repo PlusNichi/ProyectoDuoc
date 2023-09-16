@@ -19,6 +19,14 @@ const routes: Routes = [
     path: 'login',
     loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
   },
+  {
+    path: 'restore',
+    loadChildren: () => import('./restore/restore.module').then( m => m.RestorePageModule)
+  },
+  {
+    path: 'cambiocon',
+    loadChildren: () => import('./cambiocon/cambiocon.module').then( m => m.CambioconPageModule)
+  },
 ];
 
 @NgModule({

@@ -1,6 +1,14 @@
+.titu {
+  --background: #0A3F70;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+
+  text-align: center;
+}
+
 #container {
   text-align: center;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Montserrat', sans-serif;
   position: absolute;
   left: 0;
   right: 0;
@@ -16,7 +24,7 @@
 #container p {
   font-size: 16px;
   line-height: 22px;
-  font-family: 'Courier New', Courier, monospace;
+  
   color: #8c8c8c;
 
   margin: 0;
@@ -24,16 +32,14 @@
 
 #container a {
   text-decoration: none;
+  
 }
 
-ion-title{
-  font-family: 'Courier New', Courier, monospace;
-  font-weight: bolder;
-  text-align: center;
+.buton {
+  --border-radius: 27px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  --background: #FFC01D ;
 }
-#icono{
-  text-align: center;
-  margin:auto;
-  width: 150px;
-  height: 150px;
-}
+
+
