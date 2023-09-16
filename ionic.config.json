@@ -1,0 +1,7 @@
+{
+  "name": "proyecto-duoc",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
